@@ -1,10 +1,20 @@
 {
-  "name": "leaguetools",
+  "name": "Linux-gg",
   "version": "0.1.0",
   "main": "public/electron.js",
   "private": true,
   "dependencies": {
-    "@hasagi/extended": "^0.0.36"
+    "@fontsource/roboto": "^5.0.8",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hasagi/core": "^0.3.14",
+    "@hasagi/extended": "^0.0.38",
+    "moment": "^2.29.4",
+    "styled-components": "^6.1.1",
+    "tailwind-styled-components": "^2.2.0",
+    "typeface-roboto": "^1.1.13",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -107,6 +117,7 @@
     "babel-preset-react-app": "^10.0.1",
     "bfj": "^7.0.2",
     "browserslist": "^4.18.1",
+    "bufferutil": "^4.0.8",
     "camelcase": "^6.2.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "concurrently": "^8.2.2",
@@ -143,9 +154,10 @@
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
-    "tailwindcss": "^3.0.2",
+    "tailwindcss": "^3.3.5",
     "terser-webpack-plugin": "^5.2.5",
     "typescript": "^4.9.5",
+    "utf-8-validate": "^5.0.10",
     "wait-on": "^7.2.0",
     "web-vitals": "^2.1.4",
     "webpack": "^5.64.4",
