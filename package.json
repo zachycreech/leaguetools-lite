@@ -11,6 +11,7 @@
     "@hasagi/core": "^0.3.14",
     "@hasagi/extended": "^0.0.38",
     "moment": "^2.29.4",
+    "react-router-dom": "^6.19.0",
     "styled-components": "^6.1.1",
     "tailwind-styled-components": "^2.2.0",
     "typeface-roboto": "^1.1.13",

@@ -122,6 +122,16 @@ export function ContextProviders(props: PropsWithChildren) {
 
     Client.on("end-of-game-data-received", (endOfGameStats) => {
       setLoLContext((ctx) => ({ ...ctx, endOfGameStats }));
+
+      Client.request({
+        method: "get",
+        url: "/lol-match-history/v1/products/lol/current-summoner/matches",
+      }).then((value) => {
+        setLoLContext((ctx) => ({
+          ...ctx,
+          matches: value,
+        }));
+      });
     });
 
     Client.connect({

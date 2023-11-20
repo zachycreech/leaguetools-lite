@@ -1,7 +1,8 @@
 import { ContextProviders } from "./context/context";
 import { styled } from "styled-components";
 import { Sidebar } from "./components";
-import { MatchHistory } from "./screens/MatchHistory";
+import { HashRouter } from "react-router-dom";
+import { AllRoutes } from "./routes";
 
 const Container = styled.div`
   background-color: #4b5563;
@@ -17,31 +18,14 @@ const Container = styled.div`
 function App() {
   return (
     <ContextProviders>
-      <Container>
-        <Sidebar />
-        <MatchHistory />
-      </Container>
+      <HashRouter>
+        <Container>
+          <Sidebar />
+          <AllRoutes />
+        </Container>
+      </HashRouter>
     </ContextProviders>
   );
 }
-
-// function Test() {
-//   const lolContext = useContext(LoLContext);
-
-//   return (
-//     <>
-//       <h1>{lolContext.summoner?.displayName}</h1>
-//       <div>
-//         Connected: {String(lolContext.isConnected)}
-//         <br />
-//         State: {lolContext.state}
-//         <br />
-//         Gameflow phase: {lolContext.gameflowPhase}
-//         <br />
-//         Gamemode: {lolContext.lobby?.gameConfig.gameMode}
-//       </div>
-//     </>
-//   );
-// }
 
 export default App;
